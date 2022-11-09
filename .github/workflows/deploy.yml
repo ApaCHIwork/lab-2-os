@@ -13,7 +13,7 @@ jobs:
     - name: Upload to the server 
       uses: wlixcc/SFT-Deploy-Action@v1.0 
       with:
-        username: ${{secrets.EC2_ USERNAME}}
+        username: ${{secrets.EC2_USERNAME}}
         server: ${{secrets.EC2_SERVER_IP}}
         ssh private_key: "S{{secrets.EC2_SSH_PRIVATE_KEY}}"
         local path: './*'
